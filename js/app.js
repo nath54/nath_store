@@ -39,25 +39,25 @@ function aff(){
     for(k of Object.keys(app.sizes)){
         text_sizes+=k+" ( "+app.sizes[k]+" )"
         if(Object.keys(app.sizes).indexOf(k)<Object.keys(app.sizes).length-1){
-            text_sizes+=" , "
+            text_sizes+=",\n "
         }
     }
-    document.getElementById("sizes_text").innerHTML=text_sizes;
+    document.getElementById("sizes_text").innerText=text_sizes;
     //Made with
-    document.getElementById("madewith_text").innerHTML=app.made_with;
+    document.getElementById("madewith_text").innerText=app.made_with;
     //Platforms
     var text_platforms = "";
     for(p of app.platforms){
         text_platforms+=p;
         if(app.platforms.indexOf(p)<app.platforms.length-1){
-            text_platforms+=" , ";
+            text_platforms+=",\n ";
         }
     }
-    document.getElementById("platforms_text").innerHTML=text_platforms;
+    document.getElementById("platforms_text").innerText=text_platforms;
     //description
-    document.getElementById("description_text").innerHTML=app.description;
+    document.getElementById("description_text").innerText=app.description;
     //autres infos
-    document.getElementById("other_information_text").innerHTML=app.other_informations;
+    document.getElementById("other_information_text").innerText=app.other_informations;
     //Downloads
     var kd=Object.keys(app.downloads)
     // linux
@@ -96,9 +96,27 @@ function aff(){
     else{
         bl.style.display="none";
     }
+    // python
+    var bl=document.getElementById("download_python");
+    if(kd.includes("python")){
+        bl.style.display="initial";
+        bl.href=app.downloads.python;
+    }
+    else{
+        bl.style.display="none";
+    }
+    // web
+    var bl=document.getElementById("web_link");
+    if(kd.includes("web")){
+        bl.style.display="initial";
+        bl.href=app.downloads.web;
+    }
+    else{
+        bl.style.display="none";
+    }
     document.getElementById("appname_text").innerHTML=app.name;
     //image
-    document.getElementById("app_image").setAttribute("src",app.image);
+    //document.getElementById("app_image").setAttribute("src",app.image);
     //screenshots    
     var sdiv=document.getElementById("screenshotsdiv");
     for(s of app.screenshots){
@@ -110,15 +128,19 @@ function aff(){
         dd.appendChild(ii);
         sdiv.appendChild(dd);
     }
-    //
-    document.getElementById("appname_text").innerHTML=app.name;
-    //
-    document.getElementById("appname_text").innerHTML=app.name;
-    //
-    document.getElementById("appname_text").innerHTML=app.name;
-    //
-    document.getElementById("appname_text").innerHTML=app.name;
-    //
-    document.getElementById("appname_text").innerHTML=app.name;
+    //Title
+    document.getElementById("title").innerHTML=app.name+" - Nath54 Store";
+    //States
+    var wa=document.getElementById("warning_abandoned");
+    var wi=document.getElementById("warning_indev");
+    var wp=document.getElementById("warning_playable");
+    wa.style.display="none";
+    wi.style.display="none";
+    wp.style.display="none";
+    if(app.state=="abandoned"){ wa.style.display="initial"; }
+    if(app.state=="indev"){ wi.style.display="initial"; }
+    if(app.state=="playable"){ wp.style.display="initial"; }
+
+    
 
 }

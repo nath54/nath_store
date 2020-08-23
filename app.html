@@ -49,7 +49,7 @@
 
 	<div id="fh5co-hero-wrapper">
 		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
-			<a class="navbar-brand" href="">Nath54 Store</a>
+			<a class="navbar-brand" href="index.html">Nath54 Store</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -57,7 +57,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-items-center ml-auto mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">App <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#" onclick="$('#fh5co-features').goTo();return false;">More</a>
@@ -81,8 +81,12 @@
 		<div class="container fh5co-hero-inner">
 			<h1 class="animated fadeIn wow" data-wow-delay="0.4s" id="appname_text">App Name</h1>
 			<p class="animated fadeIn wow" data-wow-delay="0.67s" id="appshortdescription_text">App short description</p>
+			<p class="animated fadeIn wow" data-wow-delay="0.67s" style="color:red; font-weight: bold;" id="warning_abandoned">Warning, the development of this game has been abandoned</p>
+			<p class="animated fadeIn wow" data-wow-delay="0.67s" style="color:orangered; font-weight: bold;" id="warning_indev">Warning, this game is in development</p>
+			<p class="animated fadeIn wow" data-wow-delay="0.67s" style="color:green; font-weight: bold;" id="warning_playable">This game isn't really finished, but is playable</p>
+			<p></p>
 			<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('#fh5co-download').goTo();return false;">Download</button>
-			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-features').goTo();return false;">More</button>
+			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-features').goTo();return false;">More</button>			
 			<img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src="" alt="" id="app_image">
 		</div>
 
@@ -246,6 +250,8 @@
 						<a class="wow fadeIn animated" data-wow-delay="0.0.67s" href="#" id="download_windows"><img class="app-store-btn" src="img/bt_windows.svg" alt="windows download link" /> </a>
 						<a class="wow fadeIn animated" data-wow-delay="0.109s" href="#" id="download_macos"><img class="app-store-btn" src="img/bt_macos.svg" alt="macos download link" /> </a>
 						<a class="wow fadeIn animated" data-wow-delay="0.151s" href="#" id="download_android"><img class="app-store-btn" src="img/bt_android.svg" alt="android download link" /> </a>
+						<a class="wow fadeIn animated" data-wow-delay="0.151s" href="#" id="download_python"><img class="app-store-btn" src="img/bt_python.svg" alt="python download link" /> </a>
+						<a class="wow fadeIn animated" data-wow-delay="0.151s" href="#" id="web_link"><img class="app-store-btn" src="img/bt_web.svg" alt="web link" /> </a>
 						
 					</div>
 				</div>
@@ -268,7 +274,7 @@
 				<div class="column-2-3">
 					<nav class="footer-nav">
 						<ul>
-							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
+							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>App</li></a>
 							<a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Features</li></a>
 							<a href="#" onclick="$('#fh5co-reviews').goTo();return false;"><li>Reviews</li></a>
 							<a href="#" onclick="$('#fh5co-download').goTo();return false;"><li class="active">Download</li></a>
