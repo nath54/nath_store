@@ -16,6 +16,7 @@ function aff_apps(){
     //on recherche celles qui peuvent être affichées : 
     var w_godot=[];
     var w_python=[];
+    var w_other=[];
 
     for(i=0; i<applications.length; i++){
         var a = applications[i];
@@ -25,6 +26,9 @@ function aff_apps(){
             }
             else if(a.category=="python"){
                 w_python.push(i);
+            }
+            else if(a.category=="other"){
+                w_other.push(i);
             }
         }
     }
@@ -51,6 +55,17 @@ function aff_apps(){
             }
         }
     }
+    for(i=0; i<w_other.length; i++){
+        for(j=0; j<i; j++){
+            var ai=applications[i];
+            var aj=applications[j];
+            if(ai.priority>aj.priority){
+                var temp=w_other[i];
+                w_other[i]=w_other[j]
+                w_other[j]=temp;
+            }
+        }
+    }
     //affichage de celles qu'il faut afficher
     for(appid of w_godot){
         var dive=create_bt_to_app(appid);
@@ -60,6 +75,12 @@ function aff_apps(){
         var dive=create_bt_to_app(appid);
         document.getElementById("slider_python").appendChild(dive);
     }
+    /*
+    for(appid of w_other){
+        var dive=create_bt_to_app(appid);
+        document.getElementById("slider_other").appendChild(dive);
+    }
+    */
 
 }
 
