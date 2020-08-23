@@ -49,7 +49,7 @@
 
 	<div id="fh5co-hero-wrapper">
 		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
-			<a class="navbar-brand" href="">Nath54 Store</a>
+			<a class="navbar-brand" href="index.html">Nath54 Store</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -57,13 +57,13 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-items-center ml-auto mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">Main <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="$('#div_games').goTo();return false;">Games</a>
+						<a class="nav-link" href="#" onclick="$('#div_godot').goTo();return false;">Godot</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="$('#div_websites').goTo();return false;">Websites</a>
+						<a class="nav-link" href="#" onclick="$('#div_python').goTo();return false;">Python</a>
 					</li>
 				</ul>
 				<div class="social-icons-header">
@@ -75,10 +75,10 @@
 		</nav>
 
 		<div class="container fh5co-hero-inner">
-			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">Nath54 Store</h1>
-			<p class="animated fadeIn wow" data-wow-delay="0.67s">The second place where I puts my creations after github. </p>
-			<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('#fh5co-download').goTo();return false;">Games</button>
-			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-features').goTo();return false;">websites</button>
+			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">Nath54 Store - GAMES</h1>
+			<p class="animated fadeIn wow" data-wow-delay="0.67s">There are games that I done</p>
+			<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('#div_godot').goTo();return false;">Godot</button>
+			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#div_python').goTo();return false;">Python</button>
 		</div>
 
 
@@ -86,36 +86,31 @@
 
 
 	<!-- ==========================================================================================================
-													  GAMES
+													  GODOT
 		 ========================================================================================================== -->
 
-	<div id="div_games" class="fh5co-slider-outer wow fadeIn" data-wow-delay="0.36s">
-		<h1>Games
-			<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="window.location='games.html';">More</button>
-		</h1>
+	<div id="div_godot" class="fh5co-slider-outer wow fadeIn" data-wow-delay="0.36s">
+		<h1>Godot</h1>
 		
 		<div class="container fh5co-slider-inner">
 
-			<div class="owl-carousel owl-theme" id="slider_games">
+			<div class="owl-carousel owl-theme" id="slider_godot">
 
 			</div>
 
 		</div>
 	</div>
 
-	
 	<!-- ==========================================================================================================
-													  WEBSITES
+													  PYTHON
 		 ========================================================================================================== -->
 
-		 <div id="div_websites" class="fh5co-slider-outer wow fadeIn" data-wow-delay="0.36s">
-			<h1>Websites
-				<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="window.location='websites.html';">More</button>
-			</h1>
+		 <div id="div_python" class="fh5co-slider-outer wow fadeIn" data-wow-delay="0.36s">
+			<h1>Python</h1>
 			
 			<div class="container fh5co-slider-inner">
 	
-				<div class="owl-carousel owl-theme" id="slider_websites">
+				<div class="owl-carousel owl-theme" id="slider_python">
 	
 				</div>
 	
@@ -156,9 +151,9 @@
 				<div class="column-2-3">
 					<nav class="footer-nav">
 						<ul>
-							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
-							<a href="#" onclick="$('#div_games').goTo();return false;"><li>Games</li></a>
-							<a href="#" onclick="$('#div_websites').goTo();return false;"><li>Websites</li></a>
+							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Main</li></a>
+							<a href="#" onclick="$('#div_godot').goTo();return false;"><li>Godot</li></a>
+							<a href="#" onclick="$('#div_python').goTo();return false;"><li>Python</li></a>
 						</ul>
 					</nav>
 				</div>
@@ -191,5 +186,5 @@
 </body>
 <script src="js/data_apps.js" type="text/javascript"></script>
 <script src="js/lib.js" type="text/javascript"></script>
-<script src="js/index.js" type="text/javascript"></script>
+<script src="js/games.js" type="text/javascript"></script>
 </html>

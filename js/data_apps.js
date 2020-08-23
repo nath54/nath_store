@@ -43,6 +43,7 @@ var applications=[
         image:"",
         priority:0, 
         posted_date:[23,8,2020],
+        category:"",
     },
 
 /*
@@ -64,6 +65,7 @@ var applications=[
         image:"https://raw.githubusercontent.com/nath54/The_Purple_Order/master/icon.png",
         priority:0,
         posted_date:[23,8,2020],
+        category:"godot",
     },
 
     {
@@ -81,6 +83,7 @@ var applications=[
         image:"https://raw.githubusercontent.com/nath54/Cube3/master/icon.png",
         priority:0, 
         posted_date:[23,8,2020],
+        category:"godot",
     },
     {
         name:"Cube2",
@@ -97,6 +100,7 @@ var applications=[
         image:"img/apps/cube2/logo.png",
         priority:0, 
         posted_date:[23,8,2020],
+        category:"python",
     },
 
 
@@ -119,6 +123,7 @@ var applications=[
         image:"img/apps/js_quiz/logo.png",
         priority:0, 
         posted_date:[23,8,2020],
+        category:"utilities",
     },
 
 ];
